@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>230194849872-1esiuht6io6unsk4uto6ov9t8k38frbl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.230194849872-1esiuht6io6unsk4uto6ov9t8k38frbl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyATm4N710UhCb5KZqfFZoY-fRLYpumOy88</string>
+	<key>GCM_SENDER_ID</key>
+	<string>230194849872</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.thingseesmart</string>
+	<key>PROJECT_ID</key>
+	<string>thingseesmart</string>
+	<key>STORAGE_BUCKET</key>
+	<string>thingseesmart.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:230194849872:ios:91e145b87605910e1b4955</string>
+</dict>
+</plist>

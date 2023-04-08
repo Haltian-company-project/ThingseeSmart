@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "230194849872",
+    "project_id": "thingseesmart",
+    "storage_bucket": "thingseesmart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230194849872:android:e02708d97e803b7e1b4955",
+        "android_client_info": {
+          "package_name": "com.example.thingseesmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230194849872-e0j3p10tf09ar22ka0h44kncpjcppqlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDLadRJHrrwa7f8bQudjVKtXI4Rn7YB7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230194849872-e0j3p10tf09ar22ka0h44kncpjcppqlt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "230194849872-1esiuht6io6unsk4uto6ov9t8k38frbl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.thingseesmart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
