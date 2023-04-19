@@ -1,7 +1,6 @@
 //main page (login)
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:thingseesmart/pages/auth_page.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({super.key});
@@ -93,6 +92,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Thingseesamart'),
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

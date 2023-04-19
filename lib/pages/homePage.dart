@@ -10,14 +10,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  get child => null;
-
   @override
   // TODO: implement widget
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('ThingeseeSmart'),
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
