@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:thingseesmart/components/data_block.dart';
@@ -6,12 +7,23 @@ import 'package:thingseesmart/pages/all_charts.dart';
 
 class SingleChart extends StatelessWidget {
   const SingleChart({Key? key}) : super(key: key);
-
+  void signUserOut() {
+    FirebaseAuth.instance.signOut();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('single data'),
+          title: Text('Dash Board'),
+
+          actions: [
+            IconButton(
+              onPressed: () {
+                signUserOut();
+              },
+              icon: const Icon(Icons.logout),
+            ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {

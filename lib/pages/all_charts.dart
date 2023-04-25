@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -7,7 +8,9 @@ import 'data_show.dart';
 
 class AllCharts extends StatelessWidget {
   const AllCharts({Key? key}) : super(key: key);
-
+  void signUserOut() {
+    FirebaseAuth.instance.signOut();
+  }
   @override
   Widget build(BuildContext context) {
     List<dynamic>? carbonDioxideData = [];
@@ -18,7 +21,16 @@ class AllCharts extends StatelessWidget {
     List<dynamic>? tvoccData = [];
     return Scaffold(
       appBar: AppBar(
-        title: Text('All Charts'),
+        title: Text('Graph View'),
+
+        actions: [
+          IconButton(
+            onPressed: () {
+              signUserOut();
+            },
+            icon: const Icon(Icons.logout),
+          ),
+        ],
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance.collection('data').orderBy('timestamp', descending: true).limit(15).snapshots(),

@@ -1,4 +1,3 @@
-# thingseesmart
 
 A new Flutter project.
 
