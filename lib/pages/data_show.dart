@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:thingseesmart/components/data_block.dart';
 
 class ShowData extends StatelessWidget {
   List<dynamic> data;
@@ -16,7 +17,7 @@ class ShowData extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('History'),
+        title: Text('Data history'),
         actions: [
           IconButton(
             onPressed: () {
@@ -37,7 +38,7 @@ class ShowData extends StatelessWidget {
             margin: EdgeInsets.all(8),
             child: ListTile(
               textColor: Colors.white,
-              tileColor: Colors.blue.shade600,
+              tileColor: Colors.blue.shade400,
               title: Center(
                   child: Text(
                 data[index].toString(),
