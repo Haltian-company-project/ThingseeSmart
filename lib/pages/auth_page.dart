@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:thingseesmart/pages/login.dart';
-import 'package:thingseesmart/pages/userdash.dart';
+import 'package:thingseesmart/pages/single_data.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
@@ -12,7 +12,7 @@ class AuthPage extends StatelessWidget {
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
-              return UserDash();
+              return SingleChart();
             } else {
               return LoginPage();
             }
