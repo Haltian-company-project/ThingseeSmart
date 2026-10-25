@@ -13,7 +13,7 @@ class SingleChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var menu;
+    var menu; 
     return Scaffold(
         appBar: AppBar(
           title: const Center(child: Text('Dash Board')),
@@ -78,7 +78,6 @@ class SingleChart extends StatelessWidget {
                       upper_range: 800,
                       statusOne: "Good",
                       statusTwo: "Bad",
-                      icon: const Icon(Icons.airline_seat_flat_angled),
                     )),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -89,33 +88,27 @@ class SingleChart extends StatelessWidget {
                     upper_range: 800,
                     statusOne: "Good",
                     statusTwo: "Bad",
-                    icon: Icon(
-                        const IconData(0xf542, fontFamily: 'MaterialIcons'),
-                        color: Colors.blue.shade600),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: DataBlock(
-                    data: bib['humd'],
-                    name: "Humidity",
-                    lower_range: 30,
-                    upper_range: 40,
-                    statusOne: "Good",
-                    statusTwo: "Bad",
-                    icon: const Icon(Icons.airline_seat_flat_angled),
-                  ),
-                ),
+                    padding: const EdgeInsets.all(8.0),
+                    child: DataBlock(
+                      data: bib['humd'],
+                      name: "Humidity",
+                      lower_range: 30,
+                      upper_range: 40,
+                      statusOne: "Good",
+                      statusTwo: "Bad",
+                    )),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: DataBlock(
                     data: bib['temp'],
                     name: "Temperature",
-                    lower_range: 20,
-                    upper_range: 22,
+                    lower_range: 19,
+                    upper_range: 23,
                     statusOne: "good",
                     statusTwo: "bad",
-                    icon: const Icon(Icons.airline_seat_flat_angled),
                   ),
                 ),
                 Padding(
@@ -127,7 +120,6 @@ class SingleChart extends StatelessWidget {
                     upper_range: 1030000,
                     statusOne: "Good",
                     statusTwo: "Bad",
-                    icon: const Icon(Icons.airline_seat_flat_angled),
                   ),
                 ),
                 Padding(
@@ -139,7 +131,6 @@ class SingleChart extends StatelessWidget {
                     upper_range: 0,
                     statusOne: "",
                     statusTwo: "",
-                    icon: const Icon(Icons.airline_seat_flat_angled),
                   ),
                 ),
                 Padding(
@@ -151,7 +142,6 @@ class SingleChart extends StatelessWidget {
                     upper_range: 1000,
                     statusOne: "Good",
                     statusTwo: "Bad",
-                    icon: const Icon(Icons.airline_seat_flat_angled),
                   ),
                 ),
                 Padding(
@@ -163,7 +153,6 @@ class SingleChart extends StatelessWidget {
                     upper_range: 1000,
                     statusOne: "Good",
                     statusTwo: "Bad",
-                    icon: const Icon(Icons.airline_seat_flat_angled),
                   ),
                 ),
               ],

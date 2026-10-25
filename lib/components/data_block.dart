@@ -7,6 +7,7 @@ class DataBlock extends StatelessWidget {
   int upper_range;
   String statusOne;
   String statusTwo;
+
   DataBlock({
     Key? key,
     required this.data,

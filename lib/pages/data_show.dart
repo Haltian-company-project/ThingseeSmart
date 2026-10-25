@@ -17,7 +17,7 @@ class ShowData extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Data history'),
+        title: Center(child: Text('Data history')),
         actions: [
           IconButton(
             onPressed: () {
